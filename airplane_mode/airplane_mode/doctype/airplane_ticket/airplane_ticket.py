@@ -6,7 +6,7 @@ from frappe.model.document import Document
 
 
 class AirplaneTicket(Document):
-	def before_validate(self):
+	def validate(self):
 		self.remove_duplicate_item()
 		self.calculate_total_amount()
 
