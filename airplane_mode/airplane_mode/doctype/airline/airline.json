@@ -6,9 +6,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "headquarters",
   "founding_year",
+  "column_break_hfae",
   "customer_care_number",
-  "headquarters"
+  "website"
  ],
  "fields": [
   {
@@ -30,6 +32,16 @@
    "in_list_view": 1,
    "label": "Headquarters",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hfae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
  "grid_page_length": 50,
@@ -37,10 +49,10 @@
  "links": [
   {
    "link_doctype": "Airplane",
-   "link_fieldname": "Airline"
+   "link_fieldname": "airline"
   }
  ],
- "modified": "2025-08-05 21:24:20.500179",
+ "modified": "2025-08-20 15:34:49.468848",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airline",
